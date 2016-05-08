@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Voice and tone swatchbook</title>
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=NTR:400'>
+
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  font-family: 'NTR', sans-serif;
+  font-weight: 400;
+  height: 100%;
+  background: #eff1f3;
+  background-image: radial-gradient(50% 50%, #ffffff 0%, #eff1f3 100%);
+  line-height: 1;
+}
+
+.colors {
+  width: 700px;
+  height: 500px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.pin {
+  width: 28px;
+  height: 28px;
+  background: #5c5d5f;
+  background-image: radial-gradient(50% 50%, #5c5d5f 30%, #4b4b4d 37%, #4b4b4d 43%, #8c8e91 47%, #8c8e91 60%, #68696b 70%, #535456);
+  border-radius: 50%;
+  position: absolute;
+  top: 353px;
+  left: 360px;
+  z-index: 100;
+}
+
+.color {
+  width: 360px;
+  height: 118px;
+  border-radius: 6px;
+  position: absolute;
+  color: #fff;
+  padding: 12px 30px;
+  transform-origin: 21px calc(100% - 21px);
+  text-align: right;
+}
+.color h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.color h1 {
+  margin: 28px 0;
+  font-size: 45px;
+  text-align: center;
+  line-height: 22px;
+  text-shadow: -3px -2px 1px rgba(255, 255, 255, 0.2);
+}
+.color h1 span {
+  display: block;
+}
+.color h1 span sub {
+  font-size: .6em;
+  vertical-align: baseline;
+}
+.color h1 span:nth-child(1) {
+  position: relative;
+  left: -50px;
+}
+.color h1 span:nth-child(2) {
+  position: relative;
+  left: 50px;
+}
+.color small {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+}
+.color em {
+  position: absolute;
+  top: 12px;
+  left: calc(100% - 12px);
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  line-height: 1;
+  font-style: normal;
+  font-size: 11px;
+}
+@keyframes animate-1 {
+  0% {
+    transform: translate(350px, 270px) rotate(360deg);
+  }
+  100% {
+    transform: translate(350px, 270px) rotate(180deg);
+  }
+}
+.color:nth-child(1) {
+  box-shadow: -5px -4px 10px rgba(0, 0, 0, 0.08);
+  background: #8f9dd0;
+  z-index: 1;
+  transform: translate(350px, 270px) rotate(360deg);
+  animation: animate-1 1s 1s ease-in-out forwards;
+}
+@keyframes animate-2 {
+  0% {
+    box-shadow: -5px -4px 10px transparent;
+    transform: translate(350px, 270px) rotate(360deg);
+  }
+  100% {
+    box-shadow: -5px -4px 10px rgba(0, 0, 0, 0.08);
+    transform: translate(350px, 270px) rotate(192.25deg);
+  }
+}
+.color:nth-child(2) {
+  background: #80acdc;
+  z-index: 2;
+  transform: translate(350px, 270px) rotate(360deg);
+  animation: animate-2 1s 1s ease-in-out forwards;
+}
+@keyframes animate-3 {
+  0% {
+    box-shadow: -5px -4px 10px transparent;
+    transform: translate(350px, 270px) rotate(360deg);
+  }
+  100% {
+    box-shadow: -5px -4px 10px rgba(0, 0, 0, 0.08);
+    transform: translate(350px, 270px) rotate(204.5deg);
+  }
+}
+.color:nth-child(3) {
+  background: #58c3f0;
+  z-index: 3;
+  transform: translate(350px, 270px) rotate(360deg);
+  animation: animate-3 1s 1s ease-in-out forwards;
+}
+@keyframes animate-4 {
+  0% {
+    box-shadow: -5px -4px 10px transparent;
+    transform: translate(350px, 270px) rotate(360deg);
+  }
+  100% {
+    box-shadow: -5px -4px 10px rgba(0, 0, 0, 0.08);
+    transform: translate(350px, 270px) rotate(216.75deg);
+  }
+}
+.color:nth-child(4) {
+  background: #6dcde0;
+  z-index: 4;
+  transform: translate(350px, 270px) rotate(360deg);
+  animation: animate-4 1s 1s ease-in-out forwards;
+}
+@keyframes animate-5 {
+  0% {
+    box-shadow: -5px -4px 10px transparent;
+    transform: translate(350px, 270px) rotate(360deg);
+  }
+  100% {
+    box-shadow: -5px -4px 10px rgba(0, 0, 0, 0.08);
+    transform: translate(350px, 270px) rotate(229deg);
+  }
+}
+.color:nth-child(5) {
+  background: #6dc9c3;
+  z-index: 5;
+  transform: translate(350px, 270px) rotate(360deg);
+  animation: animate-5 1s 1s ease-in-out forwards;
+}
+@keyframes animate-6 {
+  0% {
+    box-shadow: -5px -4px 10px transparent;
+    transform: translate(350px, 270px) rotate(360deg);
+  }
+  100% {
+    box-shadow: -5px -4px 10px rgba(0, 0, 0, 0.08);
+    transform: translate(350px, 270px) rotate(241.25deg);
+  }
+}
+.color:nth-child(6) {
+  background: #7ec7ad;
+  z-index: 6;
+  transform: translate(350px, 270px) rotate(360deg);
+  animation: animate-6 1s 1s ease-in-out forwards;
+}
+@keyframes animate-7 {
+  0% {
+    box-shadow: -5px -4px 10px transparent;
+    transform: translate(350px, 270px) rotate(360deg);
+  }
+  100% {
+    box-shadow: -5px -4px 10px rgba(0, 0, 0, 0.08);
+    transform: translate(350px, 270px) rotate(253.5deg);
+  }
+}
+.color:nth-child(7) {
+  background: #aed580;
+  z-index: 7;
+  transform: translate(350px, 270px) rotate(360deg);
+  animation: animate-7 1s 1s ease-in-out forwards;
+}
+@keyframes animate-8 {
+  0% {
+    box-shadow: -5px -4px 10px transparent;
+    transform: translate(350px, 270px) rotate(360deg);
+  }
+  100% {
+    box-shadow: -5px -4px 10px rgba(0, 0, 0, 0.08);
+    transform: translate(350px, 270px) rotate(265.75deg);
+  }
+}
+.color:nth-child(8) {
+  background: #fed17b;
+  z-index: 8;
+  transform: translate(350px, 270px) rotate(360deg);
+  animation: animate-8 1s 1s ease-in-out forwards;
+}
+@keyframes animate-9 {
+  0% {
+    box-shadow: -5px -4px 10px transparent;
+    transform: translate(350px, 270px) rotate(360deg);
+  }
+  100% {
+    box-shadow: -5px -4px 10px rgba(0, 0, 0, 0.08);
+    transform: translate(350px, 270px) rotate(278deg);
+  }
+}
+.color:nth-child(9) {
+  background: #f89e68;
+  z-index: 9;
+  transform: translate(350px, 270px) rotate(360deg);
+  animation: animate-9 1s 1s ease-in-out forwards;
+}
+@keyframes animate-10 {
+  0% {
+    box-shadow: -5px -4px 10px transparent;
+    transform: translate(350px, 270px) rotate(360deg);
+  }
+  100% {
+    box-shadow: -5px -4px 10px rgba(0, 0, 0, 0.08);
+    transform: translate(350px, 270px) rotate(290.25deg);
+  }
+}
+.color:nth-child(10) {
+  background: #e86e6e;
+  z-index: 10;
+  transform: translate(350px, 270px) rotate(360deg);
+  animation: animate-10 1s 1s ease-in-out forwards;
+}
+@keyframes animate-11 {
+  0% {
+    box-shadow: -5px -4px 10px transparent;
+    transform: translate(350px, 270px) rotate(360deg);
+  }
+  100% {
+    box-shadow: -5px -4px 10px rgba(0, 0, 0, 0.08);
+    transform: translate(350px, 270px) rotate(302.5deg);
+  }
+}
+.color:nth-child(11) {
+  background: #d47385;
+  z-index: 11;
+  transform: translate(350px, 270px) rotate(360deg);
+  animation: animate-11 1s 1s ease-in-out forwards;
+}
+@keyframes animate-12 {
+  0% {
+    box-shadow: -5px -4px 10px transparent;
+    transform: translate(350px, 270px) rotate(360deg);
+  }
+  100% {
+    box-shadow: -5px -4px 10px rgba(0, 0, 0, 0.08);
+    transform: translate(350px, 270px) rotate(330deg);
+  }
+}
+.color:nth-child(12) {
+  background: #ffffff;
+  z-index: 12;
+  transform: translate(350px, 270px) rotate(360deg);
+  animation: animate-12 1s 1s ease-in-out forwards;
+}
+@keyframes animate-13 {
+  0% {
+    box-shadow: -5px -4px 10px transparent;
+    transform: translate(350px, 270px) rotate(360deg);
+  }
+  100% {
+    box-shadow: -5px -4px 10px rgba(0, 0, 0, 0.08);
+    transform: translate(350px, 270px) rotate(357.5deg);
+  }
+}
+.color:nth-child(13) {
+  background: #ffffff;
+  z-index: 13;
+  transform: translate(350px, 270px) rotate(360deg);
+  animation: animate-13 1s 1s ease-in-out forwards;
+}
+@keyframes animate-14 {
+  0% {
+    box-shadow: -5px -4px 10px transparent;
+    transform: translate(350px, 270px) rotate(360deg);
+  }
+  100% {
+    box-shadow: -5px -4px 10px rgba(0, 0, 0, 0.08);
+    transform: translate(350px, 270px) rotate(385deg);
+  }
+}
+.color:nth-child(14) {
+  background: #121213;
+  z-index: 14;
+  transform: translate(350px, 270px) rotate(360deg);
+  animation: animate-14 1s 1s ease-in-out forwards;
+}
+.color:nth-child(12) {
+  padding: 12px;
+  color: #8aaddb;
+  background-image: linear-gradient(75deg, #8aaddb 50%, #fff 50%);
+  background-size: 101% 120%;
+}
+.color:nth-child(13) {
+  padding: 12px;
+  color: #6377b9;
+  background-image: linear-gradient(75deg, #6377b9 40%, #fff 40%);
+  background-size: 101% 120%;
+}
+.color:nth-child(14) {
+  background-image: repeating-linear-gradient(230deg, transparent, transparent 2px, rgba(0, 0, 0, 0.2) 2px, rgba(0, 0, 0, 0.2) 4px);
+}
+
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+    	<div class="colors">
+      <div class="color">
+        <h2>Tasteful</h2>
+        <small>not click bait</small>
+        <em>#011</em>
+      </div>
+      <div class="color">
+        <h2>Empathetic</h2>
+        <small>not apologetic</small>
+        <em>#010</em>
+      </div>
+      <div class="color">
+        <h2>Partner</h2>
+        <small>not vendor</small>
+        <em>#009</em>
+      </div>
+      <div class="color">
+        <h2>Focused</h2>
+        <small>not limited</small>
+        <em>#008</em>
+      </div>
+      <div class="color">
+        <h2>Genuine</h2>
+        <small>not artificial</small>
+        <em>#007</em>
+      </div>
+      <div class="color">
+        <h2>Big</h2>
+        <small>not impersonal</small>
+        <em>#006</em>
+      </div>
+      <div class="color">
+        <h2>Enthusiastic</h2>
+        <small>not hyperbolic</small>
+        <em>#005</em>
+      </div>
+      <div class="color">
+        <h2>Inspirational</h2>
+        <small>not unachievable</small>
+        <em>#004</em>
+      </div>
+      <div class="color">
+        <h2>Empowering</h2>
+        <small>not absent</small>
+        <em>#003</em>
+      </div>
+      <div class="color">
+        <h2>Confident</h2>
+        <small>not boastful</small>
+        <em>#002</em>
+      </div>
+      <div class="color">
+        <h2>Trustworthy</h2>
+        <small>not inexperienced</small>
+        <em>#001</em>
+      </div>
+      <div class="color">
+        <h2>Inspiring growth</h2>
+      </div>
+      <div class="color">
+        <h2>Building confidence</h2>
+      </div>
+      <div class="color">
+        <h1>
+          <span>VOICE</span>
+          <span><sub>and</sub> TONE</span>
+        </h1>
+      </div>
+
+      <div class="pin"></div>
+	</div>
+    
+    
+    
+    
+    
+  </body>
+</html>
